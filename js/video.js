@@ -14,6 +14,6 @@ window.addEventListener("load", () => {
   //When click play button, Play the video and update the volume information
   document.getElementById("play").addEventListener("click", () => {
     video.play();
-    document.getElementById("volume").innerHTML = video.volume;
+    document.getElementById("volume").innerHTML = document.getElementById("slider").value + "%";
   });
 });
