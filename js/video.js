@@ -10,4 +10,10 @@ window.addEventListener("load", () => {
   console.log("video: ", video);
   video.autoplay = false;
   video.loop = false;
+
+  //When click play button, Play the video and update the volume information
+  document.getElementById("play").addEventListener("click", () => {
+    video.play();
+    document.getElementById("volume").innerHTML = video.volume;
+  });
 });
